@@ -1,9 +1,9 @@
 import { AppBar, Box, Button, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
-import NavbarDrawer from "./NavbarDrawer";
 import MenuIcon from '@mui/icons-material/Menu';
 import { PropTypes } from "prop-types";
 import { NavLink } from "react-router-dom";
+import ListDrawer from "./NavbarDrawer";
 
 export default function Navegador({ navLinks }) {
 
@@ -53,7 +53,7 @@ export default function Navegador({ navLinks }) {
         sx={{ display: { xs: "flex", sm: "none" }}}
         setOpen={setOpen}
       >
-        <NavbarDrawer navLinks={navLinks} setOpen={setOpen}/>
+        <ListDrawer navLinks={navLinks} setOpen={setOpen}/>
       </Drawer>
 
     </>  

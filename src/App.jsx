@@ -13,7 +13,7 @@ const certificates = SkillsData.reduce((allCertificates, skill) => [...allCertif
 const navLinks = [
   {
     title: "Acerca de mi",  
-    path: "/acerca-de-mi", 
+    path: "/", 
     icon: <HomeIcon />,
     element: <AboutMe />
   },
