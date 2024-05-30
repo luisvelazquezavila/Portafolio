@@ -8,27 +8,30 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { BrowserRouter } from 'react-router-dom'
 
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#1976d2',
+      main: '#014ba0',
     },
     secondary: {
-      main: '#9c27b0',
+      main: '#005954',
     },
+    tertiary: {
+      main: '#c501e2',
+    },
+    quaternary: {
+      main: "#fff"
+    }
   },
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <CssBaseline />
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <CssBaseline />
-        <App />
-      </BrowserRouter>
+       <App />
     </ThemeProvider>
   </React.StrictMode>,
 )

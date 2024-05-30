@@ -1,0 +1,74 @@
+#contact {
+  padding-bottom: 0;
+}
+
+.form-container {
+  background-image: linear-gradient(rgba(70, 131, 180, 0.496), rgba(3, 3, 3, 0.704)), url("../../assets/img/nubes.jpg");
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+  margin: auto;
+  color: white;
+  border-radius: 10px;
+  & Button {
+    font-weight: 900;
+    margin: auto;
+    display: block;
+  }
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  input {
+    color: white;
+    outline: 0;
+    border: 0;
+  }
+  label {
+    color: white;
+  }
+
+  textarea {
+    color: black;
+    outline: 0;
+    height: 7rem;
+    resize: none;
+    font-size: 1rem;
+  }
+}
+
+.form-container__data {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: fit-content;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+.form-container__data a {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-container__data-link {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.contact__social-networks {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2rem;
+}

@@ -1,60 +1,59 @@
-import Navegador from './components/Navbar/Navbar'
-import { Route, Routes } from "react-router-dom"
-import HomeIcon from '@mui/icons-material/Home'
-import LoginIcon from '@mui/icons-material/Login'
-import HowToRegIcon from '@mui/icons-material/HowToReg'
-import AboutMe from './components/pages/AboutMe'
-import Skills from './components/pages/Skills/Skills'
-import SkillsData from './components/pages/Skills/SkillsData'
-import Projects from "./components/pages/projects/Projects"
-
-const certificates = SkillsData.reduce((allCertificates, skill) => [...allCertificates, ...skill.certificates], []);
-
-const navLinks = [
-  {
-    title: "Acerca de mi",  
-    path: "/", 
-    icon: <HomeIcon />,
-    element: <AboutMe />
-  },
-  {
-    title: "Habilidades",    
-    path: "/habilidades", 
-    icon: <LoginIcon />,
-    element: <Skills />
-  },
-  {
-    title: "Proyectos",  
-    path: "/proyectos", 
-    icon: <HowToRegIcon />,
-    element: <Projects />
-  },
-  {
-    title: "Contacto",  
-    path: "/contacto", 
-    icon: <HowToRegIcon />,
-    element: "#"
-  },
-];
+import AboutMe from "./components/aboutMe/AboutMe"
+import NavBar from "./components/nav/NavBar"
+import { useState } from "react"
+import AccountBoxIcon from "@mui/icons-material/AccountBox"
+import WorkIcon from "@mui/icons-material/Work"
+import PsychologyIcon from "@mui/icons-material/Psychology"
+import ContactMailIcon from "@mui/icons-material/ContactMail"
+import { Drawer } from "@mui/material"
+import NavBarDrawer from "./components/nav/NavBarDrawer"
+import Skills from "./components/skills/Skills"
+import Portfolio from "./components/portfolio/Portfolio"
+import Contact from "./components/contact/Contact"
 
 function App() {
+
+  const [open, setOpen] = useState(false);
+
+  const navLinks = [
+    {
+      title: "Acerca de mi",
+      to: "about",
+      icon: <AccountBoxIcon/>
+    },
+    {
+      title: "Habilidades",
+      to: "skills",
+      icon: <PsychologyIcon/>
+    },
+    {
+      title: "Portafolio",
+      to: "portfolio",
+      icon: <WorkIcon/>
+    },
+    {
+      title: "Contacto",
+      to: "contact",
+      icon: <ContactMailIcon/>
+    }
+  ];
+
   return (
     <>
-      <Navegador navLinks={navLinks} />
-      <Routes>
-        {
-          navLinks.map((route, id) => (
-            <Route key={id} exact path={route.path} element={route.element} />
-          ))
-        }
-        {
-          certificates.map((certificate, id) => (
-            <Route key={id} exact path={certificate.path} element={certificate.element} />
-          ))
-        }
-      </Routes>        
+      <NavBar navLinks={navLinks} setOpen={setOpen} /> 
+      <Drawer
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        <NavBarDrawer navLinks={navLinks} setOpen={setOpen} />
+      </Drawer>
+      <main className="main-container">  
+        <AboutMe />
+        <Skills />
+        <Portfolio />
+        <Contact />
+      </main>
     </>
-    
   )
 }
 

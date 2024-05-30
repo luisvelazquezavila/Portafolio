@@ -1,8 +1,8 @@
-import img1 from '../../../assets/img/Moka 27.jpg'
-import trailersMoviesImg from '../../../assets/img/capturada1.jpg'
-import ReactShopImg from '../../../assets/img/capturada2.jpg'
+import img1 from '../../assets/img/Moka 27.jpg'
+import trailersMoviesImg from '../../assets/img/capturada1.jpg'
+import ReactShopImg from '../../assets/img/capturada2.jpg'
 
-const ProjectsData = [
+export const portfolioData = [
   {
     img: trailersMoviesImg,
     title: "APP para ver de trailers de películas",
@@ -47,4 +47,4 @@ const ProjectsData = [
   },
 ];
 
-export default ProjectsData;
+// export default ProjectsData; 

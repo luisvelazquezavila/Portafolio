@@ -1,0 +1,15 @@
+.navBar {
+  height: 4rem;
+}
+
+.active {
+  opacity: .6;
+  transform: scale(.97);
+}
+
+.navBar__link {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}

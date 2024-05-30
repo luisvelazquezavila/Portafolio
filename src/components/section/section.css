@@ -1,0 +1,6 @@
+.section {
+  min-height: calc(100vh - 4rem); 
+  max-width: 1800px;
+  display: grid;
+  place-content: center;
+}
