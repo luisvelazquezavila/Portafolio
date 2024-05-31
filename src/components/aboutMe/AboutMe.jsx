@@ -37,7 +37,12 @@ export default function AboutMe() {
           src={photo}
           alt="Mi foto"
         />
-        <div className="card__content">
+        <Box
+          className="card__content"
+          sx={{
+            padding: { xs: "1rem", sm: "1.5rem 3rem" }
+          }}
+        >
           <p className="card__title card__title--resize">          
             Hola, soy <span className="card__span">
               <Typewriter
@@ -62,7 +67,12 @@ export default function AboutMe() {
               typeSpeed={5}
             />
           </p>
-          <div className="card__actions">
+          <Box 
+            className="card__actions"
+            sx={{
+              justifyContent: { xs: "center", sm: "space-between" }
+            }}
+          >
             <Button
               component="a"
               href={cv}
@@ -85,8 +95,8 @@ export default function AboutMe() {
                 ))
               }
             </div>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Box>
     </Section>
     

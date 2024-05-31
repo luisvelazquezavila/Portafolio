@@ -50,7 +50,7 @@
 
 .card__text {
   color: white;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0;
 }
 
 .card__actions {
@@ -58,7 +58,6 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between; 
 }
 
 .contact__social-networks {

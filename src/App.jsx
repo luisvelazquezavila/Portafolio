@@ -19,22 +19,54 @@ function App() {
     {
       title: "Acerca de mi",
       to: "about",
-      icon: <AccountBoxIcon/>
+      icon: 
+        <AccountBoxIcon 
+          sx={{ 
+            color: "orange",
+            backgroundColor: "white", 
+            borderRadius: "50%", 
+            padding: "2px" 
+          }}
+        />
+    },
+    {
+      title: "Proyectos",
+      to: "portfolio",
+      icon: 
+        <WorkIcon
+          sx={{ 
+            color: "grey",
+            backgroundColor: "white", 
+            borderRadius: "50%", 
+            padding: "2px" 
+          }}
+        />
     },
     {
       title: "Habilidades",
       to: "skills",
-      icon: <PsychologyIcon/>
-    },
-    {
-      title: "Portafolio",
-      to: "portfolio",
-      icon: <WorkIcon/>
+      icon: 
+        <PsychologyIcon
+          sx={{ 
+            color: "blueviolet",
+            backgroundColor: "white", 
+            borderRadius: "50%", 
+            padding: "2px" 
+          }}
+        />
     },
     {
       title: "Contacto",
       to: "contact",
-      icon: <ContactMailIcon/>
+      icon: 
+        <ContactMailIcon
+          sx={{ 
+            color: "dodgerblue",
+            backgroundColor: "white", 
+            borderRadius: "50%", 
+            padding: "2px" 
+          }}
+        />
     }
   ];
 
@@ -49,8 +81,8 @@ function App() {
       </Drawer>
       <main className="main-container">  
         <AboutMe />
-        <Skills />
         <Portfolio />
+        <Skills />
         <Contact />
       </main>
     </>

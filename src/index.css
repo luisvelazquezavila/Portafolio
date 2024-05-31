@@ -14,6 +14,6 @@ a {
   background-attachment: fixed;
   display: grid;
   place-content: center;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   padding: 0 .5rem;
 }

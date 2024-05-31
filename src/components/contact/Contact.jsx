@@ -31,7 +31,7 @@ export default function Contact() {
         className="form-container"
         sx={{
           padding: { xs: ".5rem", sm: "2rem 1.5rem 1rem" },
-          width: { xs: "290px", sm: "450px" }
+          width: { xs: "95vw", sm: "450px" }
         }}
       >
         <div>

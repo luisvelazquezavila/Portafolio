@@ -29,7 +29,7 @@ export default function NavBar({ navLinks, setOpen }) {
                   spy={true}
                   smooth={true}
                   duration={300}
-                  offset={-64}
+                  offset={-48}
                   activeClass="active"
                 >             
                   <p className="navBar__link">{link.title}</p>

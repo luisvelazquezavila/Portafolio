@@ -13,3 +13,14 @@
   color: white;
   cursor: pointer;
 }
+
+.navbar-drawer {
+  width: fit-content;
+  height: 100%;
+  background-color: rgb(40, 39, 39);
+  color: white;
+}
+
+.navbar-drawer__link {
+  display: flex;
+}
