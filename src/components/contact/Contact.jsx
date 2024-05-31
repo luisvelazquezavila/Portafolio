@@ -7,10 +7,6 @@ import Title from "../title/Title"
 
 export default function Contact() {
 
-  const handleSubmit = () => {
-    alert("se ha enviado el formulario");
-  }
-
   const dataLinks = [
     {
       href: "tel:5560188488",
@@ -39,7 +35,6 @@ export default function Contact() {
         </div>
         <form 
           className="form-container__form"
-          onSubmit={handleSubmit}
           noValidate 
           target="_blank"
           autoComplete="off" 
