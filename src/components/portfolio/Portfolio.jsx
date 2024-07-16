@@ -4,9 +4,9 @@ import "./portfolio.css"
 import Section from "../section/Section";
 import Title from "../title/Title";
 
-const [ pjt1, pjt2, pjt3, pjt4, pjt5, pjt6 ] = portfolioData;
+const [ pjt1, ...rest ] = portfolioData;
 
-const projects = [pjt1, pjt2, pjt3, pjt4, pjt5, pjt6];
+const projects = [pjt1, ...rest];
 
 export default function Portfolio() {
   return (

@@ -1,49 +1,36 @@
-import img1 from '../../assets/img/Moka 27.jpg'
 import trailersMoviesImg from '../../assets/img/capturada1.jpg'
-import ReactShopImg from '../../assets/img/capturada2.jpg'
+import reactShopImg from '../../assets/img/shop-and-cart.jpg'
+import killMartiansImg from '../../assets/img/kill-martians.jpg'
+import landingPageImg from '../../assets/img/landing-page.jpg'
 
 export const portfolioData = [
   {
     img: trailersMoviesImg,
     title: "APP para ver de trailers de películas",
     tags: ["#HTML", "#CSS", "#JavaScrip", "#React"],
-    link: "https://main--papaya-narwhal-494d65.netlify.app/",
-    repository: "https://github.com/luisvelazquezavila/Video-Trailers-App"
+    link: "https://video-trailer-movies.netlify.app/",
+    repository: "https://github.com/luisvelazquezavila/video-trailer-movies"
   },
   {
-    img: ReactShopImg,
+    img: reactShopImg,
     title: "Tienda virtual con carrito",
     tags: ["#HTML", "#CSS", "#JavaScrip", "#React"],
-    link: "https://glittery-cuchufli-aeba1c.netlify.app/",
-    repository: "https://github.com/luisvelazquezavila/React-Shop"
+    link: "https://chipper-stardust-8124ff.netlify.app/",
+    repository: "https://github.com/luisvelazquezavila/shop-and-cart"
   },
   {
-    img: img1,
-    title: "Proyecto 3",
-    tags: ["#HTML", "#CSS", "#JavaScrip", "#React"],
-    link: "#",
-    repository: "#"
+    img: killMartiansImg,
+    title: "Juego de mata marcianos",
+    tags: ["#HTML", "#JavaScrip"],
+    link: "https://luisvelazquezavila.github.io/Kill-Martians-Game/",
+    repository: "https://github.com/luisvelazquezavila/Kill-Martians-Game/settings/pages"
   },
   {
-    img: img1,
-    title: "Proyecto 4",
+    img: landingPageImg,
+    title: "Landing page",
     tags: ["#HTML", "#CSS", "#JavaScrip"],
-    link: "#",
-    repository: "#"
-  },
-  {
-    img: img1,
-    title: "Proyecto 5",
-    tags: ["#HTML", "#CSS", "#JavaScrip"],
-    link: "#",
-    repository: "#"
-  },
-  {
-    img: img1,
-    title: "Proyecto 6",
-    tags: ["#HTML", "#CSS", "#JavaScrip"],
-    link: "#",
-    repository: "#"
+    link: "https://luisvelazquezavila.github.io/responsive-landing-page/",
+    repository: "https://github.com/luisvelazquezavila/responsive-landing-page"
   },
 ];
 
