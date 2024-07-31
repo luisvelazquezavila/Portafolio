@@ -46,12 +46,12 @@ export default function AboutMe() {
           <p className="card__title card__title--resize">          
             Hola, soy <span className="card__span">
               <Typewriter
-              words={['Luis']}
-              loop={3}
-              cursorStyle='_'
-              delaySpeed={2500}
-              typeSpeed={200}
-              deleteSpeed={200}
+                words={['Luis']}
+                loop={3}
+                cursorStyle='_'
+                delaySpeed={2500}
+                typeSpeed={200}
+                deleteSpeed={200}
               />
             </span>
           </p>

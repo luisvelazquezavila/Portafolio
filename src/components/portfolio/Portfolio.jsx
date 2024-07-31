@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard"
 import "./portfolio.css"
 import Section from "../section/Section";
 import Title from "../title/Title";
+import { Box } from "@mui/material";
 
 const [ pjt1, ...rest ] = portfolioData;
 
@@ -12,20 +13,14 @@ export default function Portfolio() {
   return (
   <Section id="portfolio">
     <Title title="Proyectos" />
-    <div className="portfolio__projects">
-      {
-        projects.map((project, id) => (
-          <ProjectCard 
-            key={id}
-            img={project.img} 
-            title={project.title} 
-            tags={project.tags} 
-            link={project.link} 
-            repo={project.repository}
-          />
-        ))
-      }
-    </div>
+    <Box 
+      className="portfolio__projects"
+      sx={{ gap: { xs: "1rem", sm: "3rem" } }}
+    >
+      <ProjectCard 
+        projects={projects}
+      />
+    </Box>
   </Section>
     
 

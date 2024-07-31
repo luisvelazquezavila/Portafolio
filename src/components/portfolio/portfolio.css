@@ -2,7 +2,7 @@
   max-width: 1500px;
   min-width: 260px;
   display: grid;
-  gap: 1.5rem;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
+  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }

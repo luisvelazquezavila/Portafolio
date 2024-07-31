@@ -1,61 +1,31 @@
-import { Box, Button, Typography } from "@mui/material"
+// import { Box, Button, IconButton, Typography } from "@mui/material"
 import { PropTypes } from "prop-types"
 import "./projectCard.css"
 
-export default function ProjectCard({ img, title, tags, link, repo }) {
+// import Dialog from '@mui/material/Dialog';
+// import DialogActions from '@mui/material/DialogActions';
+// import DialogContent from '@mui/material/DialogContent';
+// import DialogContentText from '@mui/material/DialogContentText';
+// import DialogTitle from '@mui/material/DialogTitle';
+// import CloseIcon from '@mui/icons-material/Close';
+import ProjectModal from "./ProjectModal";
+// import { useState } from "react";
+// import ProjectModal from "./ProjectModal";
+
+export default function ProjectCard({ projects }) {
+
   return (
-    <Box
-      className="project-card" 
-      sx={{ padding: { xs: ".5rem", sm: "1rem" } }}
-    >
-    <img 
-      className="project-card__img"
-      src={img} 
-      alt={title}
-    />
-    <div className="project-card__texts">
-      <p className="project-card__title">
-        {title}
-      </p>
-      <div className="project-card__tags">
-        {
-          tags.map((tag, id) => (
-            <Typography className="project-card__tag" key={id}>{tag}</Typography>
-          ))
-        }  
-      </div> 
-      <div className="project-card__buttons">
-        <Button
-          color="primary"
-          component="a"
-          href={link}
-          variant="contained"
-          size="small"
-          target="_blank"
-        >
-          Demo
-        </Button>
-        <Button
-          color="primary"
-          component="a"
-          href={repo}
-          variant="outlined"
-          sx={{fontWeight: "bold"}}
-          size="small"
-          target="_blank"
-        >
-          Repositorio
-        </Button>
-      </div>          
-    </div>
-    </Box>
+    <>
+      {
+        projects.map((project, index) => (
+          <ProjectModal key={index} project={project} />
+        ))
+      }
+      
+    </>
   )
 }
 
 ProjectCard.propTypes = {
-  img: PropTypes.string,  
-  title: PropTypes.string,  
-  tags: PropTypes.array,  
-  link: PropTypes.string,  
-  repo: PropTypes.string
+  projects: PropTypes.array
 }

@@ -1,0 +1,28 @@
+.dialog__title {
+  color: white;
+  background-color: #171718;
+}
+
+.project-modal__tags {
+  margin-top: 1rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.project-modal__tag {
+  color: #2196f3;
+  font-size: small;
+}
+
+.dialog__content {
+  background-color: #1f2124;
+}
+
+.dialog__actions {
+  background-color: #171718;
+  color: white;
+}
+
+.dialog__actions a {
+  color: white;
+}
