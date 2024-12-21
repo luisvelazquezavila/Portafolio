@@ -32,10 +32,10 @@ export const portfolioData = [
   {
     img: crudImg,
     title: "CRUD desarrollado con React JS",
-    tags: ["#HTML", "#CSS", "#JavaScrip", "React JS"],
-    link: "https://merry-duckanoo-08dedb.netlify.app/",
-    repository: "https://github.com/luisvelazquezavila/react-crud",
-    description: "Aplicación CRUD responsiva y funcional, optimizada para una experiencia de usuario sencilla y eficaz, haciendo uso de tecnologías de vanguardia en React, incluyendo React Hooks (useState, useEffect, useForm, customHooks) para una gestión de estado y efectos avanzada. Cuenta con la implementación de la librería UUID para la generación de identificadores únicos, asegurando la unicidad y consistencia de los datos, demás de habilidades de mapeo y filtrado de datos para facilitar la manipulación y visualización de la información, mejorando la interactividad y accesibilidad de la aplicación."
+    tags: ["#HTML", "#CSS", "#JavaScrip", "#React JS", "#TypeScript"],
+    link: "https://stellular-praline-5b0bbe.netlify.app/",
+    repository: "https://github.com/luisvelazquezavila/user-crud",
+    description: "Aplicación para gestionar usuarios, permitiendo crear, editar, eliminar y visualizar usuarios. Cuenta con validación para evitar duplicados de usernames, confirma la eliminación de usuarios antes de proceder, y guarda los cambios en localStorage para persistencia de datos."
   },
   {
     img: landingPageImg,
