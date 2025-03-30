@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material"
 import photo from "../../assets/img/luis.png"
-import cv from "../../assets/img/Curriculum CV.pdf"
+import cv from "../../assets/files/Curriculum.pdf"
 import { Typewriter } from "react-simple-typewriter"
 import "./aboutMe.css"
 import Section from "../section/Section"
